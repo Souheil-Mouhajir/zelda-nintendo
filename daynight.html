@@ -1,0 +1,12 @@
+<script>
+window.addEventListener("load", function () {
+  var hour = new Date().getHours();
+  var night = hour >= 19 || hour < 7;
+  var saved = null;
+  try { saved = localStorage.getItem("quarto-color-scheme"); } catch (e) {}
+  if (saved === null && night && !document.body.classList.contains("quarto-dark") && window.quartoToggleColorScheme) {
+    window.quartoToggleColorScheme();
+    try { localStorage.removeItem("quarto-color-scheme"); } catch (e) {}
+  }
+});
+</script>

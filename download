@@ -1,0 +1,5 @@
+.ipynb_checkpoints/
+__pycache__/
+zelda_nintendo_files/
+.quarto/
+.DS_Store

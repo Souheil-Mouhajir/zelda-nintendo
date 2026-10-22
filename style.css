@@ -1,0 +1,190 @@
+@font-face {
+  font-family: "Fira Sans";
+  src: url("fonts/FiraSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url("fonts/FiraSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url("fonts/FiraSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url("fonts/FiraSans-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Triforce";
+  src: url("fonts/Triforce.ttf") format("truetype");
+}
+body, #quarto-content, main, .page-columns {
+  background-color: floralwhite;
+  color: rgb(40, 40, 40);
+}
+h1.title {
+  font-family: "Triforce", serif;
+  font-weight: 400;
+  color: darkslategray;
+}
+p.subtitle {
+  color: dimgray;
+}
+h2 {
+  color: darkslategray;
+  font-weight: 600;
+  border-bottom: 1px solid tan;
+  padding-bottom: 6px;
+  margin-top: 2.4em;
+}
+h3 {
+  color: darkslategray;
+}
+a {
+  color: seagreen;
+}
+div.sourceCode, pre.sourceCode {
+  background-color: oldlace;
+  border: none;
+  border-radius: 4px;
+}
+.cell-output-stdout pre, .cell-output pre {
+  background-color: linen;
+  border-radius: 4px;
+}
+table {
+  font-size: 0.85em;
+}
+.hero-banner {
+  width: 100%;
+  height: 180px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 0 0 1.2em 0;
+}
+.hero-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 22%;
+  display: block;
+  opacity: 0.72;
+}
+#title-block-header .abstract {
+  border-left: 3px solid tan;
+  padding: 4px 0 4px 14px;
+}
+.quarto-title-meta-heading {
+  color: dimgray;
+}
+.slots {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin: 0.4em 0 2em 0;
+}
+.slot {
+  border: 1px solid tan;
+  border-radius: 6px;
+  padding: 12px;
+  text-align: center;
+  color: dimgray;
+  font-size: 0.82em;
+  line-height: 1.35;
+}
+.slot .num {
+  display: block;
+  font-size: 1.9em;
+  font-weight: 700;
+  color: darkslategray;
+  margin-bottom: 4px;
+}
+@media (max-width: 700px) {
+  .slots {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.botw {
+  border-left: 3px solid tan;
+  background-color: oldlace;
+  border-radius: 0 6px 6px 0;
+  padding: 10px 16px;
+  margin: 1.2em 0;
+  font-size: 0.95em;
+}
+.botw::before {
+  content: attr(data-speaker);
+  display: block;
+  font-size: 0.78em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: saddlebrown;
+  margin-bottom: 4px;
+}
+.botw p:last-child, .botw ul:last-child {
+  margin-bottom: 0;
+}
+figcaption, .figure-caption {
+  color: dimgray;
+  font-size: 0.88em;
+  font-style: italic;
+}
+body.quarto-dark, body.quarto-dark #quarto-content, body.quarto-dark main, body.quarto-dark .page-columns, body.quarto-dark #quarto-header {
+  background-color: rgb(24, 30, 38) !important;
+  color: rgb(220, 220, 215);
+}
+body.quarto-dark p, body.quarto-dark li, body.quarto-dark td, body.quarto-dark th, body.quarto-dark .quarto-title-meta-contents, body.quarto-dark #TOC a, body.quarto-dark p.subtitle {
+  color: rgb(220, 220, 215) !important;
+}
+body.quarto-dark h1, body.quarto-dark h2, body.quarto-dark h3, body.quarto-dark .quarto-title-meta-heading {
+  color: rgb(235, 210, 140) !important;
+}
+body.quarto-dark h2 {
+  border-bottom-color: rgb(90, 90, 80);
+}
+body.quarto-dark .cell-output pre, body.quarto-dark .cell-output-stdout pre, body.quarto-dark .botw, body.quarto-dark .slot {
+  background-color: rgb(34, 42, 52) !important;
+  color: rgb(220, 220, 215);
+}
+body.quarto-dark .slot .num {
+  color: rgb(235, 210, 140);
+}
+body.quarto-dark .cell-output-display img {
+  border-radius: 6px;
+  filter: brightness(0.92);
+}
+body.quarto-dark body.quarto-dark table, body.quarto-dark .table {
+  color: rgb(220, 220, 215);
+  --bs-table-color: rgb(220, 220, 215);
+  --bs-table-bg: transparent;
+  --bs-table-striped-color: rgb(220, 220, 215);
+}
+body.quarto-dark a {
+  color: rgb(140, 200, 170);
+}
+body.quarto-dark code {
+  background-color: rgb(40, 48, 58);
+  color: rgb(235, 210, 140);
+}
+
+/* Quarto callouts, recoloured to the chart palette */
+.callout.callout-warning { border-left-color: goldenrod !important; }
+.callout-warning > .callout-header { background-color: rgb(250, 240, 210) !important; }
+.callout.callout-tip { border-left-color: seagreen !important; }
+.callout-tip > .callout-header { background-color: rgb(224, 240, 230) !important; }
+.callout.callout-note { border-left-color: slateblue !important; }
+.callout-note > .callout-header { background-color: rgb(230, 228, 245) !important; }
+.callout-warning .callout-icon::before { filter: sepia(1) saturate(3) hue-rotate(5deg); }
+.callout-tip .callout-icon::before { filter: hue-rotate(-20deg); }
+.callout-note .callout-icon::before { filter: hue-rotate(20deg); }
+body.quarto-dark .callout { background-color: rgb(34, 42, 52) !important; color: rgb(220, 220, 215); }
+body.quarto-dark .callout > .callout-header { background-color: rgb(44, 54, 66) !important; color: rgb(235, 210, 140); }
+body.quarto-dark div.sourceCode, body.quarto-dark pre.sourceCode { background-color: rgb(34, 42, 52) !important; }
+.apa p { padding-left: 2em; text-indent: -2em; }
+.quarto-category { border: none !important; padding: 0 !important; text-transform: none !important; font-size: 1em !important; color: inherit !important; opacity: 1 !important; }
