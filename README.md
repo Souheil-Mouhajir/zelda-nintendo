@@ -10,7 +10,7 @@ The project measures how far The Legend of Zelda reaches into the audience of ea
 |---|---|
 | `zelda_nintendo.ipynb` | The notebook with all code, outputs and text |
 | `zelda_nintendo.html` | The Quarto render of the notebook, self contained |
-| `reflection.docx` | The reflective essay (318 words, double spaced) |
+| `reflection.docx` | The reflective essay (318 words) |
 | `data/raw/` | The four input CSV files |
 | `style.css`, `banner.html`, `daynight.html` | Page style, title banner and the clock based light and dark start |
 | `fonts/` | Fira Sans (SIL Open Font Licence, see `fonts/OFL.txt`) and the Triforce title font |
